@@ -1,0 +1,166 @@
+body {
+    background: #ffffff;
+    color: #282828;
+    font-family: "owners", Helvetica, sans-serif;
+    font-weight: 400;
+    font-style: normal; 
+}
+
+.navbar-brand{
+    color: #282828;
+    font-size: 40px;
+    font-weight: 500;
+    padding-left: 5px;
+}
+
+.navbar-brand:hover{
+    text-decoration: none;
+}
+
+.nav-link{
+    color: #282828;
+}
+
+.nav-item{
+    font-size: 24px;
+    padding: 0 50px;
+}
+
+.homeNav{
+    font-weight: 500;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 40px;
+    padding: 10px 50px 10px 50px;
+}
+
+
+.homeNav a{
+    font-size: 128px;
+    text-decoration: none;
+    color: #282828;
+}
+
+a:hover{
+    color: #23E070;
+    text-decoration: underline;
+}
+
+.dash{
+    font-size: 128px;
+    color: #282828;
+}
+
+.arrivalsTicker{
+    overflow: hidden;
+    width: 100%;
+    background-color: #23E070;
+    padding: 12px 0;
+    
+}
+
+.tickerItems{
+    display: flex;
+    width: max-content;
+    animation: ticker-scroll 25s linear infinite
+}
+
+.tickerItems h3{
+    white-space: nowrap;
+    font-size: 32px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: #282828;
+    margin: 2.5px 0 ;
+    padding: 0 50px;
+    position: relative;
+}
+
+.borderBlack{
+    color: #282828;
+}
+
+@keyframes ticker-scroll{
+    0%{
+        transform: translateX();
+    }
+    100%{
+        transform: translateX(-50%);
+    }
+}
+
+
+
+/* Font sizes
+
+Owners XLight
+font-family: "owners", sans-serif;
+font-weight: 200;
+font-style: normal;
+
+Owners XLight Italic
+font-family: "owners", sans-serif;
+font-weight: 200;
+font-style: italic;
+
+Owners Light
+font-family: "owners", sans-serif;
+font-weight: 300;
+font-style: normal;
+
+Owners Light Italic
+font-family: "owners", sans-serif;
+font-weight: 300;
+font-style: italic;
+
+Owners Regular
+font-family: "owners", sans-serif;
+font-weight: 400;
+font-style: normal;
+
+Owners Italic
+font-family: "owners", sans-serif;
+font-weight: 400;
+font-style: italic;
+
+Owners Medium
+font-family: "owners", sans-serif;
+font-weight: 500;
+font-style: normal;
+
+Owners Medium Italic
+font-family: "owners", sans-serif;
+font-weight: 500;
+font-style: italic;
+
+Owners Bold
+font-family: "owners", sans-serif;
+font-weight: 700;
+font-style: normal;
+
+Owners Bold Italic
+font-family: "owners", sans-serif;
+font-weight: 700;
+font-style: italic;
+
+Owners Black
+font-family: "owners", sans-serif;
+font-weight: 800;
+font-style: normal;
+
+Owners Black Italic
+font-family: "owners", sans-serif;
+font-weight: 800;
+font-style: italic;
+
+Owners XBlack
+font-family: "owners", sans-serif;
+font-weight: 900;
+font-style: normal;
+
+Owners XBlack Italic
+font-family: "owners", sans-serif;
+font-weight: 900;
+font-style: italic;
+
+*/

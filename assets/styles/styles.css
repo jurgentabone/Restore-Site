@@ -6,6 +6,24 @@ body {
     font-style: normal; 
 }
 
+.col img{
+    object-fit: scale-down;
+    height: 300px;
+    width: 100%;
+}
+
+.card-body {
+    font-size: 13pt;
+    font-weight: 500;
+    padding:0;
+}
+
+.caption{
+    font-size: 8pt;
+    font-weight: 400;
+}
+
+
 .navbar-brand{
     color: #282828;
     font-size: 40px;

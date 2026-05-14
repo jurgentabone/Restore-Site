@@ -6,6 +6,7 @@ body {
     font-style: normal; 
 }
 
+
 .wavy-line {
     --s: 5px; /* size of the wave */
     --b: 2px; /* thickness of the line */
@@ -327,7 +328,21 @@ body {
     scale: calc(1.08);
 }
 
+.pageNum a{
+    text-decoration: none;
+    color: #282828;
+    margin-right: 50px;
+}
 
+.pageNum a:hover{
+    color:#23E070;
+    transition: 0.2s;
+    scale: calc(1.10);
+}
+
+.currentNum h2{
+    color: #23E070;
+}
 
 /* Font sizes
 

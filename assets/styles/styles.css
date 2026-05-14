@@ -34,7 +34,7 @@ body {
 }
 
 .col-3 img{
-    object-fit: scale-down;
+    object-fit:contain;
     height: 300px;
     width: 100%;
 }
@@ -46,7 +46,7 @@ body {
 }
 
 .caption{
-    font-size: 8pt;
+    font-size: 10pt;
     font-weight: 400;
 }
 
@@ -70,6 +70,7 @@ body {
     text-decoration: none;
     color: #23E070;
     transition: 0.2s;
+    transform: scale(1.10);
 }
 
 .nav-item{
@@ -85,17 +86,23 @@ body {
     padding: 10px 50px 10px 50px;
 }
 
-
 .homeNav a{
     font-size: 128px;
     text-decoration: none;
     color: #282828;
 }
 
-a:hover{
+.pageTitle{
+    font-size: 128px;
+    color: #282828;
+    padding: 10px 50px 10px 50px;
+}
+
+.homeNav a:hover{
     color: #23E070;
     text-decoration: underline;
     transition: 0.2s;
+    transform: scale(1.10);
 }
 
 .dash{
@@ -148,6 +155,7 @@ a:hover{
     color: #ffffff;
     background-color:#0D843D;
     transition: 0.2s; 
+    transform: scale(1.10);
 }
 
 .btn-lg{
@@ -158,6 +166,7 @@ a:hover{
     color: #ffffff;
     background-color:#0D843D;
     transition: 0.2s;
+    transform: scale(1.10); 
 }
 
 .countdown h1{
@@ -179,6 +188,7 @@ a:hover{
     text-decoration: none;
     color: #23E070;
     transition: 0.2s;
+    transform: scale(1.10);
 }
 
 .restoreText{
@@ -194,6 +204,7 @@ a:hover{
     color: #23E070;
     transition: 0.4s;
     cursor:default;
+    transform: scale(1.10);
 }
 
 .megaMenu {
@@ -209,24 +220,26 @@ a:hover{
     background-color: white;
     color: #23E070;
     transition: 0.2s;
+    transform: scale(1.10);
 }
 
-.brand-letters {
+.allBrands {
     display: flex;
     flex-wrap: wrap;
     gap: 12px;
     max-width: 300px;
 }
 
-.brand-letters a {
+.allBrands a {
     text-decoration: none;
     color: black;
     font-size: 24px;
 }
 
-.brand-letters a:hover {
+.allBrands a:hover {
     color: #23E070;
     transition: 0.2s;
+    transform: scale(1.40);
 }
 
 
@@ -237,6 +250,81 @@ a:hover{
     100%{
         transform: translateX(-50%);
     }
+}
+
+.productCard {
+    min-height: 650px;
+}
+
+.productImg {
+    height: 320px;
+    object-fit: contain;
+    padding-bottom: 2000px;
+}
+
+.addBtn {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    border: 3px solid black;
+    background: #20e070;
+    font-size: 35px;
+    line-height: 1;
+}
+
+.addBtn:hover{
+    background-color:#0D843D;
+    color: #ffffff;
+    transition: 0.2s;
+    scale: calc(1.08);
+}
+
+.currentTab{
+    background-color: #23E070;
+}
+
+
+.productName {
+    font-size: 28px;
+    font-weight: 500;
+    padding-top: 15px;
+}
+
+.smallImage{
+    padding: 15%;
+}
+
+
+.lowest {
+    color: #20e070;
+    font-size: 20px;
+}
+
+.price {
+    font-size: 42px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.lastSale{
+    color: #666;
+}
+
+.dropdown a:hover{
+    color: #23E070;
+    background-color: #ffffff;
+}
+
+.dropdown-toggle{
+    font-size: 16pt;
+}
+
+.hoverGreen:hover{
+    color: #23E070;
+    scale: calc(1.08);
 }
 
 

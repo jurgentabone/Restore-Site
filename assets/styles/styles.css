@@ -6,6 +6,10 @@ body {
     font-style: normal; 
 }
 
+.flip{
+    transform: scaleX(-1);
+}
+
 
 .wavy-line {
     --s: 5px; /* size of the wave */

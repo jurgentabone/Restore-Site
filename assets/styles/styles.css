@@ -23,6 +23,15 @@ body {
     color: #282828;
 }
 
+.dropImage{
+    width: auto;
+    height: 100px;
+}
+
+.dropImage:hover{
+    scale: calc(1);
+}
+
 .currentTab{
     background-color: #23E070;
 }
@@ -121,6 +130,10 @@ body {
     transition: 0.2s;
 }
 
+.img-fluid:hover{
+    scale: calc(1);
+}
+
 
 /* -----------------------
 Coutdown Styles
@@ -132,6 +145,10 @@ Coutdown Styles
 
 .countdown p{
     font-size: 24pt;
+}
+
+.countdown{
+    background-color: #ffffff;
 }
 
 

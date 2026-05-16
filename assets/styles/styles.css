@@ -1,3 +1,6 @@
+/* -----------------------
+General Styles
+----------------------- */
 body {
     background: #ffffff;
     color: #282828;
@@ -10,6 +13,42 @@ body {
     transform: scaleX(-1);
 }
 
+.carousel-control-prev,
+.carousel-control-next {
+    width: 3%;
+}
+
+.dash{
+    font-size: 128px;
+    color: #282828;
+}
+
+.currentTab{
+    background-color: #23E070;
+}
+
+.smallImage{
+    padding: 12% !important;
+}
+
+.dropdown a:hover{
+    color: #23E070;
+    background-color: #ffffff;
+}
+
+.dropdown-toggle{
+    font-size: 16pt;
+}
+
+.hoverGreen:hover{
+    color: #23E070;
+    scale: calc(1.08);
+}
+
+.bg-white:hover{
+    color: #23E070 !important;
+    background-color: #f4f4f4 !important;
+}
 
 .wavy-line {
     --s: 5px; /* size of the wave */
@@ -27,6 +66,12 @@ body {
     calc(50% - 2*var(--s)) calc(50% - var(--s)/2 - var(--b)/2)/calc(4*var(--s)) calc(var(--s) + var(--b)) repeat-x,
     radial-gradient(var(--R) at left 50% top calc(-1*var(--m)*var(--s)),var(--_g)) 
     50% calc(50% + var(--s)/2 + var(--b)/2)/calc(4*var(--s)) calc(var(--s) + var(--b)) repeat-x;
+}
+
+.pageTitle{
+    font-size: 128px;
+    color: #282828;
+    padding: 10px 50px 10px 50px;
 }
 
 .paragraph{
@@ -55,6 +100,48 @@ body {
     font-weight: 400;
 }
 
+.btn-sml{
+    background-color:#23E070;
+}
+
+.btn-sml:hover{
+    color: #ffffff;
+    background-color:#0D843D;
+    transition: 0.2s; 
+}
+
+.btn-lg{
+    padding: 1%;
+    background-color:#23E070;
+}
+
+.btn-lg:hover{
+    color: #ffffff;
+    background-color:#0D843D;
+    transition: 0.2s;
+}
+
+
+/* -----------------------
+Coutdown Styles
+----------------------- */
+.countdown h1{
+    font-size: 128pt;
+    font-weight: 500;
+}
+
+.countdown p{
+    font-size: 24pt;
+}
+
+
+/* -----------------------
+Navbar Styles 
+----------------------- */
+.navbar{
+    background-color: #ffffff;
+}
+
 .navbar-brand{
     color: #282828;
     font-size: 40px;
@@ -76,143 +163,9 @@ body {
     transition: 0.2s;
 }
 
-img:hover{
-    scale: calc(1.10);
-    transition: 0.5s;
-}
-
-.carousel-control-prev,
-.carousel-control-next {
-    width: 3%;
-}
-
 .nav-item{
     font-size: 24px;
     padding: 0 50px;
-}
-
-.homeNav{
-    font-weight: 500;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px 40px;
-    padding: 10px 50px 10px 50px;
-}
-
-.homeNav a{
-    font-size: 128px;
-    text-decoration: none;
-    color: #282828;
-}
-
-.homeNav a:hover{
-    color: #23E070;
-    text-decoration: underline;
-}
-
-.pageTitle{
-    font-size: 128px;
-    color: #282828;
-    padding: 10px 50px 10px 50px;
-}
-
-.dash{
-    font-size: 128px;
-    color: #282828;
-}
-
-.arrivalsTicker{
-    overflow: hidden;
-    width: 100%;
-    background-color: #23E070;
-    padding: 12px 0;
-    
-}
-
-.countdownTicker{
-    overflow: hidden;
-    width: 100%;
-    background-color: #ffffff;
-    padding: 12px 0;
-    
-}
-
-.tickerItems{
-    display: flex;
-    width: max-content;
-    animation: ticker-scroll 25s linear infinite
-}
-
-.tickerItems h3{
-    white-space: nowrap;
-    font-size: 32px;
-    font-weight: 500;
-    letter-spacing: 1px;
-    color: #282828;
-    margin: 2.5px 0 ;
-    padding: 0 50px;
-    position: relative;
-}
-
-.borderBlack{
-    color: #282828;
-}
-
-.btn-sml{
-    background-color:#23E070;
-}
-
-.btn-sml:hover{
-    color: #ffffff;
-    background-color:#0D843D;
-    transition: 0.2s; 
-}
-
-.btn-lg{
-    background-color:#23E070;
-}
-
-.btn-lg:hover{
-    color: #ffffff;
-    background-color:#0D843D;
-    transition: 0.2s;
-}
-
-.countdown h1{
-    font-size: 128pt;
-    font-weight: 500;
-}
-
-.countdown p{
-    font-size: 24pt;
-}
-
-.footerText{
-    font-size: 16pt;
-    text-decoration: none;
-    color: #282828;
-}
-
-.footerText :hover{
-    text-decoration: none;
-    color: #23E070;
-    transition: 0.2s;
-}
-
-.restoreText{
-    font-size: 22vw;
-    font-weight: 700;
-    line-height: 0.8;
-    white-space: nowrap;
-    overflow: hidden;
-    display: flex;
-}
-
-.restoreText span:hover{
-    color: #23E070;
-    transition: 0.4s;
-    cursor:default;
-    transform: scale(1.06);
 }
 
 .megaMenu {
@@ -251,6 +204,74 @@ img:hover{
 }
 
 
+/* -----------------------
+Animation Styles
+----------------------- */
+img:hover{
+    scale: calc(1.10);
+    transition: 0.5s;
+}
+
+
+/* -----------------------
+Home Quick links Styles
+----------------------- */
+.homeNav{
+    font-weight: 500;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 40px;
+    padding: 10px 50px 10px 50px;
+}
+
+.homeNav a{
+    font-size: 128px;
+    text-decoration: none;
+    color: #282828;
+}
+
+.homeNav a:hover{
+    color: #23E070;
+    text-decoration: underline;
+}
+
+
+/* -----------------------
+Dynamic Bar Styles 
+----------------------- */
+.arrivalsTicker{
+    overflow: hidden;
+    width: 100%;
+    background-color: #23E070;
+    padding: 12px 0;
+    
+}
+
+.countdownTicker{
+    overflow: hidden;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 12px 0;
+    
+}
+
+.tickerItems{
+    display: flex;
+    width: max-content;
+    animation: ticker-scroll 25s linear infinite
+}
+
+.tickerItems h3{
+    white-space: nowrap;
+    font-size: 32px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: #282828;
+    margin: 2.5px 0 ;
+    padding: 0 50px;
+    position: relative;
+}
+
 @keyframes ticker-scroll{
     0%{
         transform: translateX();
@@ -260,6 +281,42 @@ img:hover{
     }
 }
 
+
+/* -----------------------
+Footer Styles
+----------------------- */
+.footerText{
+    font-size: 16pt;
+    text-decoration: none;
+    color: #282828;
+}
+
+.footerText:hover{
+    text-decoration: none;
+    color: #23E070;
+    transition: 0.2s;
+}
+
+.restoreText{
+    font-size: 22vw;
+    font-weight: 700;
+    line-height: 0.8;
+    white-space: nowrap;
+    overflow: hidden;
+    display: flex;
+}
+
+.restoreText span:hover{
+    color: #23E070;
+    transition: 0.4s;
+    cursor:default;
+    transform: scale(1.06);
+}
+
+
+/* -----------------------
+Product Page Styles
+----------------------- */
 .productCard {
     min-height: 650px;
 }
@@ -290,21 +347,11 @@ img:hover{
     scale: calc(1.08);
 }
 
-.currentTab{
-    background-color: #23E070;
-}
-
-
 .productName {
     font-size: 28px;
     font-weight: 500;
     padding-top: 15px;
 }
-
-.smallImage{
-    padding: 15%;
-}
-
 
 .lowest {
     color: #20e070;
@@ -319,20 +366,6 @@ img:hover{
 
 .lastSale{
     color: #666;
-}
-
-.dropdown a:hover{
-    color: #23E070;
-    background-color: #ffffff;
-}
-
-.dropdown-toggle{
-    font-size: 16pt;
-}
-
-.hoverGreen:hover{
-    color: #23E070;
-    scale: calc(1.08);
 }
 
 .pageNum a{
@@ -351,7 +384,44 @@ img:hover{
     color: #23E070;
 }
 
-/* Font sizes
+
+/* -----------------------
+Product Page Styles
+----------------------- */
+.pricePage {
+    font-size: 60px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.productPageImg{
+    height: 500px;
+    width: 800px;
+    object-fit:contain;
+}
+
+.productPageImg:hover{
+    scale: calc(1);
+}
+
+.viewAll{
+    color: #222;
+}
+
+.sizes{
+    overflow: scroll;
+    width: 500px;
+}
+
+.sizeBtn{
+    background: none;
+    border: none;
+    font-size: 45px;
+    line-height: 1;
+}
+
+
+/* Font Sizes
 
 Owners XLight
 font-family: "owners", sans-serif;
@@ -422,5 +492,4 @@ Owners XBlack Italic
 font-family: "owners", sans-serif;
 font-weight: 900;
 font-style: italic;
-
-*/
+----------------------- */

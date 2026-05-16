@@ -71,7 +71,7 @@ body {
 .pageTitle{
     font-size: 128px;
     color: #282828;
-    padding: 10px 50px 10px 50px;
+    padding: 10px 50px 10px 30px;
 }
 
 .paragraph{
@@ -283,6 +283,30 @@ Dynamic Bar Styles
 
 
 /* -----------------------
+Quick Links Styling
+----------------------- */
+.tabs a{
+    color: #282828;
+    text-decoration: none;
+    font-size: 20pt;
+    font-weight: 400;
+    align-content: center;
+}
+
+.tabs a:hover{
+    color:#23E070;
+}
+
+.activePage{
+    font-weight: 500 !important;
+}
+
+.activePage:hover{
+    color: #282828 !important;
+}
+
+
+/* -----------------------
 Footer Styles
 ----------------------- */
 .footerText{
@@ -419,6 +443,19 @@ Product Page Styles
     font-size: 45px;
     line-height: 1;
 }
+
+/* -----------------------
+Contact Page padding
+----------------------- */
+
+.leftSide{
+    padding: 5%;
+}
+
+.rightSide{
+    padding: 5%;
+}
+
 
 
 /* Font Sizes

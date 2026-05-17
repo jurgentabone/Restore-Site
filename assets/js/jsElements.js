@@ -1,3 +1,4 @@
+// Countdown from days, hours, minutes, seconds //
 const countdownDate = new Date("June 15, 2026 23:59:59").getTime();
 
 const timer = setInterval(() => {
@@ -14,7 +15,7 @@ const timer = setInterval(() => {
     document.getElementById("hours").innerHTML = hours;
     document.getElementById("minutes").innerHTML = minutes;
     document.getElementById("seconds").innerHTML = seconds;
-    
+
     if (distance < 0) {
         clearInterval(timer);
         document.getElementById("days").innerHTML = "00";
@@ -22,5 +23,29 @@ const timer = setInterval(() => {
         document.getElementById("minutes").innerHTML = "00";
         document.getElementById("seconds").innerHTML = "00";
     }
-    
 }, 1000);
+
+
+
+// Counter for cart - price changes depanding on quantity // 
+let quantity = 1;
+let price = 180;
+
+function updateCart(){
+    document.getElementById("quantity").innerText = quantity;
+    document.getElementById("totalPrice").innerText =
+    "€" + (quantity * price);
+}
+
+function increaseQty(){
+    quantity++;
+    updateCart();
+}
+
+function decreaseQty(){
+    if(quantity > 1){
+        quantity--;
+        updateCart();
+    }
+    
+}

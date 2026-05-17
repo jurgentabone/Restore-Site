@@ -13,6 +13,15 @@ body {
     transform: scaleX(-1);
 }
 
+.customMarginTop{
+    margin-top: 88px;
+}
+
+.customMarginTop2{
+    margin-top: 350px;
+}
+
+
 .carousel-control-prev,
 .carousel-control-next {
     width: 3%;
@@ -324,6 +333,23 @@ Quick Links Styling
 
 
 /* -----------------------
+Cart Items
+----------------------- */
+.cartImage{
+    height: 200px !important;
+    width: auto !important;
+    padding: 10%;
+    margin-top: 20px;
+    object-fit: contain;
+}
+
+.cartImage:hover{
+    scale: calc(1);
+}
+
+
+
+/* -----------------------
 Footer Styles
 ----------------------- */
 .footerText{
@@ -332,7 +358,7 @@ Footer Styles
     color: #282828;
 }
 
-.footerText:hover{
+.footerText a:hover{
     text-decoration: none;
     color: #23E070;
     transition: 0.2s;

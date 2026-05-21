@@ -29,7 +29,7 @@ const timer = setInterval(() => {
 
 // Counter for cart - price changes depanding on quantity // 
 let quantity = 1;
-let price = 180;
+let price = 210;
 
 function updateCart(){
     document.getElementById("quantity").innerText = quantity;
